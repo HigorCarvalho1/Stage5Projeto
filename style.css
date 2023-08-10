@@ -1,0 +1,188 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    background: linear-gradient(45deg, #190361, #bb00ff);
+    animation: gradient 5s ease infinite;
+    background-size: 200% 200%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+}
+p, button{
+    font-family: 'DM Sans', sans-serif;
+    
+}
+.screen1{
+    margin-top: 23.9rem;
+    width: 42.8rem;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    box-shadow: 0px 2.0rem 5.0rem 0px rgba(0, 0, 0, 0.80);
+    background: white;
+}
+.screen1 h2{
+    color:#34355B;
+    font-size: 2.4rem;
+    font-weight: 700;
+    width: 25.8;
+    text-align: center;
+    margin-bottom: 1.4rem;
+}
+.screen1 p{
+    color: #34355B;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 2.0rem;
+    text-align: center;
+}
+.screen1 img{
+    
+    width: 24.8rem;
+    height: 19.1rem;
+    cursor: pointer;
+}
+.screen1 img:hover{
+    filter: hue-rotate(15deg) contrast(101%) saturate(300%);
+    transition: all 200ms ease-out;
+    transform: scale(1.1) ;
+    animation: treme 0.3s;
+    animation-iteration-count: infinite;
+}
+
+.hide{
+    display: none;
+}
+.screen2{
+    background: white;
+    padding: 4.8rem 6.4rem;
+    box-shadow: 0px 2.0rem 5.0rem 0px rgba(0, 0, 0, 0.80);
+    border-radius: .5rem;
+    margin-top: 23.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.7rem;
+}
+.screen2 h2{
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #34355B;
+    text-align: center;
+    
+}
+.biscoito{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.screen2 p{
+    font-family: 'Dancing Script', cursive;
+    background: #E4EDF1;
+    width: 27.3rem;
+    box-shadow: .2rem .2rem .2rem 0px rgba(85, 85, 85, 0.50);
+    font-size: 2.4rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 1.0rem;
+}
+    
+.screen2 img{
+    margin-left: 2.0rem;
+    width: 30.0rem;
+    height: 20.0rem;
+}
+
+.screen2 button{
+    border: none;
+    width: 19.0rem;
+    padding: 1.6rem;
+    background:#FF9500;
+    border-radius: .4rem;
+    
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    color: white;
+    cursor: pointer;
+    transition: background .3s;
+}
+.screen2 button:hover{
+    background: #e18402;
+    transform: scale(1.1) ;
+}
+@keyframes move{
+    
+    0%{
+         
+         transform: translateY(var(--startY)) scale(0.2)  ;
+    }
+    100%{
+        transform: scale(1.0);
+    }
+}
+.biscoito p{
+    --startY: 150%;
+    animation: move 2s;
+    
+}
+@keyframes treme {
+    0% {margin-left: 0;}
+    25% {margin-left: 5px;}
+    50% {margin-left: 0;}
+    75% {margin-left: -5px;}
+    100% {margin-left: 0;}
+  }
+
+
+  @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@media (max-width: 900px){
+    .screen1{
+        margin-top: 17.9rem;
+        height: 80%;
+        width: 35.8rem;
+    }
+    .screen1 h2{
+        font-size: 2.0rem;
+    }
+    .screen1 img{
+        width: 20.8rem;
+        height: 14.1rem;
+    }
+    .screen2{
+        margin-top: 10.9rem;
+        height: 80%;
+        margin-bottom: 10.0rem;
+    }
+    .screen2 img{
+        width: 25.0rem;
+        height: 15.0rem;
+    }
+
+
+}
+
+
+
